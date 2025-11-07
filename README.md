@@ -1,10 +1,10 @@
-# How to merge cells in a row in wpf treegrid
+# How to Merge Cells in a Row in WPF TreeGrid?
 
-This example explains how to merge cells in a row in [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid).
+This example explains how to merge cells in a row in [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) (SfTreeGrid).
 
-You can merge the entire column parent node using `TreeGridCoveredCellInfo`.
+You can merge the entire column parent node using **TreeGridCoveredCellInfo**.
 
-### XAML
+#### XAML
 
 ``` xml
 <syncfusion:SfTreeGrid Name="treeGrid"
@@ -14,7 +14,7 @@ You can merge the entire column parent node using `TreeGridCoveredCellInfo`.
                        NavigationMode="Cell">
 ```
 
-### C#
+#### C#
 
 ``` c#
 public delegate void TreeGridRequestTreeItemsHandler(object sender, RoutedEventArgs args);
@@ -102,5 +102,4 @@ class RequestTreeItemsBehavior : Behavior<SfTreeGrid>
 }
 ```
 
-Note:
-Supports cell merging from 17.2.0.28 version
+![TreeGrid with merged parent node cells](MergedParentNodeCells.png)
